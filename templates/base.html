@@ -1,0 +1,81 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/all.css' %}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+
+    <title>Reminder{% block title %}{% endblock %}</title>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+    <div class="container">
+
+        <div class="collapse navbar-collapse w-100 " id="navbarNavAltMarkup">
+
+
+            <ul class="navbar-nav dropdown ml-auto ">
+                <li>
+                    <a class="nav-link active font-weight-bold" href="{% url 'index' %}">
+                        <i class="fa fa-home"></i>Home</a>
+
+                </li>
+                {% if user.is_authenticated %}
+                    <li>
+
+                        <a class="nav-link active font-weight-bold" href="{% url 'add_reminder' %}">
+                            <i class="fas fa-user-plus"></i> Add Reminder</a>
+                    </li>
+                    <li>
+                        <a class="nav-link active font-weight-bold" href="{% url 'dashbord' %}">
+                            Welcome {{ user.username }} (Dashboard)</a>
+                    </li>
+                    <li class="nav-item mr-3">
+                        <a href="javascript:{document.getElementById('logout').submit()}" class="nav-link">
+                            <i class="fas fa-sign-out-alt"></i> Logout
+                        </a>
+                        <form action="{% url 'logout' %}" method="POST" id="logout">
+                            {% csrf_token %}
+                            <input type="hidden">
+                        </form>
+                    </li>
+                {% else %}
+
+                    <li>
+
+                        <a class="nav-link active font-weight-bold" href="{% url 'register' %}">
+                            <i class="fa fa-user-plus"></i> Register</a>
+                    </li>
+                    <li>
+
+                        <a class="nav-link active font-weight-bold" href="{% url 'login' %}">
+                            <i class="fa fa-sign-in-alt"></i>
+
+                            Login</a>
+                    </li>
+                {% endif %}
+            </ul>
+        </div>
+    </div>
+</nav>
+{% block content %}
+{% endblock %}
+<div>
+    <footer id="main-footer" class="py-4 bg-primary text-white text-center">
+        Copyright &copy;
+        <span>Dennis Sebastian</span>
+    </footer>
+</div>
+</body>

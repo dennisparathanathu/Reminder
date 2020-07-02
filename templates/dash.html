@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} | User Dashboard {% endblock %}
+
+{% block content %}
+    <div class="jumbotron">
+        <section id="dashboard" class="py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 style="text-align: center">Welcome {{ user.first_name }}</h2>
+                        {% if rem %}
+                            <h4 style="text-align: center">Here is all your reminders</h4>
+                            {% for r in rem %}
+                                <div class="card" style="width: 18rem;">
+                                    <img class="card-img-top" src="{% static 'img/rre.png' %}" alt="Card image cap">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">{{ r.title }}</li>
+                                        <li class="list-group-item">{{ r.body }}</li>
+                                        <li class="list-group-item">{{ r.current_date }}</li>
+                                        <li class="list-group-item">{{ r.reminder_date }}</li>
+                                    </ul>
+                                    <a href="{% url 'edit_reminder' pk=r.pk %}"
+                                       class="btn btn-secondary btn-block">Edit</a>
+                                    <a href="{% url 'delete_reminder' pk=r.pk %}" class="btn btn-danger btn-block">Delete</a>
+                                </div>
+                            {% endfor %}
+
+                        {% else %}
+                            <p>You haven't set any reminders</p>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="jumbotron">
+    <p>A real miracle's a reminder and a warning that the line that separates the possible from the impossible isn't as firm as we like to think it is.
+    </p>
+
+    </div>
+{% endblock %}
