@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fe8dd2da-d589-4bcd-8eba-e4d21201fab6" name="Default Changelist" comment="" />
+    <list default="true" id="fe8dd2da-d589-4bcd-8eba-e4d21201fab6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b29d3841-a0f7-43fb-9935-764b96a13aba.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b29d3841-a0f7-43fb-9935-764b96a13aba.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/remainder/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/remainder/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/remainder/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/remainder/wsgi.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,7 +61,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1e2vXLhLK8nqzjxaoDlzpcaxxsB" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -116,7 +125,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1593532540934</updated>
-      <workItem from="1593532618731" duration="37366000" />
+      <workItem from="1593532618731" duration="37999000" />
+      <workItem from="1594908454936" duration="71000" />
+      <workItem from="1596381090759" duration="3054000" />
     </task>
     <servers />
   </component>
@@ -128,6 +139,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1593588926774" />
+    <state x="448" y="167" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1596391179415">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="448" y="167" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1596391179415" />
     <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1593588905906">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -136,9 +151,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1366.728@0.0.1366.728" timestamp="1593588046015" />
-    <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1593532617943">
+    <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1594908499059">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="379" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1593532617943" />
+    <state x="379" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1594908499059" />
   </component>
 </project>
